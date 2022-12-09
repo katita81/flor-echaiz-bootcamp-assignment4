@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+ 
+
+<body>
+
+     <header>
+        <div id="highscores" ><a href="highScores.html">View High Scores</a></div>
+
+        <div id="time">
+            Time:0
+        </div>
+
+    </header>
+
+  
+<br>
+    <div class="clear" >
+        <h1 >Coding Quiz Challenge</h1>
+        <p>
+            Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+            answers will
+            penalize your score/time by 15 seconds!
+
+        </p>
+    </div>
+    <div id="buttonStart">
+
+          <button id="start" class="clear" onclick=" timer();clearClass(); showQuestion(1); ">Start</button>
+          </div>
+    
+        <div id="q1">Commonly used data types DO NOT include:
+            <ol class="choices">
+                <li id="q1-a1" onclick="chosen(1, 1);">strings</li>
+                <li id="q1-a2" onclick="chosen(1, 2);">booleans</li>
+                <li id="q1-a3" onclick="chosen(1, 3);">alert</li>
+                <li id="q1-a4" onclick="chosen(1, 4);">numbers</li>
+            </ol>
+            
+        </div>
+        <div id="q2">The condition in an if / else statement is enclosed within _____.
+            <ol class="choices">
+                <li id="q2-a1" onclick="chosen(2, 1);">quotes</li>
+                <li id="q2-a2" onclick="chosen(2, 2);">curly brackets</li>
+                <li id="q2-a3" onclick="chosen(2, 3);">parentheses</li>
+                <li id="q2-a4" onclick="chosen(2, 4);">square brackets</li>
+            </ol>
+        </div>
+
+        <div id="q3">Arrays in JavaScript can be used to store _____.
+            <ol class="choices">
+                <li id="q3-a1" onclick="chosen(3, 1);">numbers and strings"</li>
+                <li id="q3-a2" onclick="chosen(3, 2);">other arrays </li>
+                <li id="q3-a3" onclick="chosen(3, 3);">booleans</li>
+                <li id="q3-a4" onclick="chosen(3, 4);">all of the above</li>
+            </ol>
+        </div>
+        <div id="q4">String values must be enclosed within ____.
+            <ol class="choices">
+                <li id="q4-a1" onclick="chosen(4, 1);">comma</li>
+                <li id="q4-a2" onclick="chosen(4, 2);">curly brackets </li>
+                <li id="q4-a3" onclick="chosen(4, 3);">quotes</li>
+                <li id="q4-a4" onclick="chosen(4, 4);">all of the above</li>
+            </ol>
+        </div>
+        <div id="q5">A very useful tool used during development and debugging for printing content to the debugger is:
+            <ol class="choices">
+                <li id="q5-a1" onclick="chosen(5, 1);">JavaScript</li>
+                <li id="q5-a2" onclick="chosen(5, 2);">Terminal/bash</li>
+                <li id="q5-a3" onclick="chosen(5, 3);">for loops</li>
+                <li id="q5-a4" onclick="chosen(5, 4);">console.log</li>
+            </ol>
+        </div>
+        
+        
+
+        <div id="submit">All Done!
+
+            <p id="finalScore"></p>
+            <p id="enterIns">Enter Initials: <input id="nameInitials" type="text" ></p>
+        <button id="initialName" onclick="setInitials();">Submit</buton>
+            
+        </div>
+        <div><span id="feedback" ></span></div>
+    
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- onclick="storeInitials();showHighScores();" -->
+<!-- onclick="storeInitials();"-->
+<!--setScore();-->

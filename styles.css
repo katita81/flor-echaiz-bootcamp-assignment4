@@ -1,0 +1,36 @@
+#q1, #q2,#q3,#q4,#q5,#submit {
+    display: none;
+}
+
+* { 
+        margin-top: 5px;
+}
+
+#highscores{
+    float:left
+   
+    
+}
+#time {
+float: right;
+}
+
+.clear h1, p{
+    text-align: center;
+    margin-top: 30px;;
+}
+
+#buttonStart {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+#titleHighS {
+
+    text-align: center;
+}
+
+#finalScore, #enterIns, #submit {
+    text-align: left;
+}
